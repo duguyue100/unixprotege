@@ -15,7 +15,8 @@ set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS}")
 
 include_directories ("${PROJECT_SOURCE_DIR}/build/lib")
 add_library (libupsys SHARED
-	include/upsys.h)
+	include/upsys.h
+        include/apue.h)
 
 set_target_properties(libupsys PROPERTIES LINKER_LANGUAGE CXX)
 
